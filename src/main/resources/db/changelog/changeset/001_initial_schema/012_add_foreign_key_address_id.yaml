@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: add_foreign_key_address_id
+      author: "Colos"
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: ADDRESS_ID
+            baseTableName: TB_HOTEL
+            constraintName: FK_TB_HOTEL_ADDRESS_ID
+            deferrable: false
+            initiallyDeferred: false
+            onDelete: RESTRICT
+            onUpdate: RESTRICT
+            referencedColumnNames: ID
+            referencedTableName: TB_ADDRESS
+            validate: true

@@ -1,0 +1,32 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_tb_contacts
+      author: "Colos"
+      changes:
+        - createTable:
+            tableName: TB_CONTACTS
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: PK_TB_CONTACTS
+              - column:
+                  name: CREATED_AT
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: UPDATED_AT
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: EMAIL
+                  type: VARCHAR(255)
+              - column:
+                  name: PHONE
+                  type: VARCHAR(255)

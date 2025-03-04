@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: add_foreign_key_contacts_id
+      author: "Colos"
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: CONTACTS_ID
+            baseTableName: TB_HOTEL
+            constraintName: FK_TB_HOTEL_CONTACTS_ID
+            deferrable: false
+            initiallyDeferred: false
+            onDelete: RESTRICT
+            onUpdate: RESTRICT
+            referencedColumnNames: ID
+            referencedTableName: TB_CONTACTS
+            validate: true
