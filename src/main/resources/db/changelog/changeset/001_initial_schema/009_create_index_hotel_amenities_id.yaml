@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: create_index_hotel_amenities_id
-      author: "Colos"
+      author: "Жека"
       changes:
         - createIndex:
             associatedWith: ""

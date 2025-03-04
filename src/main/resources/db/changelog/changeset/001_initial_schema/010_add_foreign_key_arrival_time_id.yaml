@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: add_foreign_key_arrival_time_id
-      author: "Colos"
+      author: "Жека"
       changes:
         - addForeignKeyConstraint:
             baseColumnNames: ARRIVAL_TIME_ID

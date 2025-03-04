@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: create_tb_address
-      author: "Colos"
+      author: "Жека"
       changes:
         - createTable:
             tableName: TB_ADDRESS

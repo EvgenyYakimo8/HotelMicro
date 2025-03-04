@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: create_tb_hotel_amenities
-      author: "Colos"
+      author: "Жека"
       changes:
         - createTable:
             tableName: TB_HOTEL_AMENITIES

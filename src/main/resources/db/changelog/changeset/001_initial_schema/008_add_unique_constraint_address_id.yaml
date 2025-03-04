@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: add_unique_constraint_address_id
-      author: "Colos"
+      author: "Жека"
       changes:
         - addUniqueConstraint:
             columnNames: ADDRESS_ID
