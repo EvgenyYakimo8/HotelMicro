@@ -14,9 +14,6 @@ public interface BrieflyHotelMapper {
 
     BrieflyHotelMapper INSTANCE = Mappers.getMapper(BrieflyHotelMapper.class);
 
-    @Mapping(source = "id", target = "id")
-    @Mapping(source = "name", target = "name")
-    @Mapping(source = "description", target = "description")
     @Mapping(source = "address.street", target = "address")
     @Mapping(source = "contacts.phone", target = "phone")
     BrieflyHotelDto toBrieflyDto(Hotel hotel);
