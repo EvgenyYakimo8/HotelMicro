@@ -1,0 +1,45 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_tb_address
+      author: "yakimov"
+      changes:
+        - createTable:
+            tableName: TB_ADDRESS
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: PK_TB_ADDRESS
+              - column:
+                  name: CREATED_AT
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: UPDATED_AT
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: CITY
+                  type: VARCHAR(255)
+              - column:
+                  name: COUNTRY
+                  type: VARCHAR(255)
+              - column:
+                  name: HOUSE_NUMBER
+                  type: SMALLINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: POST_CODE
+                  type: SMALLINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: STREET
+                  type: VARCHAR(255)

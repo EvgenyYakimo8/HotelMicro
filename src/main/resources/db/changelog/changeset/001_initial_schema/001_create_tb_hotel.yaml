@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_tb_hotel
+      author: "yakimov"
+      changes:
+        - createTable:
+            tableName: TB_HOTEL
+            columns:
+              - column:
+                  name: ID
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: PK_TB_HOTEL
+              - column:
+                  name: CREATED_AT
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: UPDATED_AT
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
+              - column:
+                  name: BRAND
+                  type: VARCHAR(255)
+              - column:
+                  name: DESCRIPTION
+                  type: VARCHAR(255)
+              - column:
+                  name: NAME
+                  type: VARCHAR(255)
+              - column:
+                  name: ADDRESS_ID
+                  type: BIGINT
+              - column:
+                  name: ARRIVAL_TIME_ID
+                  type: BIGINT
+              - column:
+                  name: CONTACTS_ID
+                  type: BIGINT

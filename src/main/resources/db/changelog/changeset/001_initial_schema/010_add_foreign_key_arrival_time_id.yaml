@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: add_foreign_key_arrival_time_id
+      author: "yakimov"
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: ARRIVAL_TIME_ID
+            baseTableName: TB_HOTEL
+            constraintName: FK_TB_HOTEL_ARRIVAL_TIME_ID
+            deferrable: false
+            initiallyDeferred: false
+            onDelete: RESTRICT
+            onUpdate: RESTRICT
+            referencedColumnNames: ID
+            referencedTableName: TB_ARRIVAL_TIME
+            validate: true

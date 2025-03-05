@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_index_hotel_amenities_id
+      author: "yakimov"
+      changes:
+        - createIndex:
+            associatedWith: ""
+            indexName: IDX_HOTEL_AMENITIES_ID
+            tableName: TB_HOTEL_AMENITIES
+            columns:
+              - column:
+                  name: ID

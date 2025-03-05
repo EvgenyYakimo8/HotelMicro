@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: add_unique_constraint_arrival_time_id
+      author: "yakimov"
+      changes:
+        - addUniqueConstraint:
+            columnNames: ARRIVAL_TIME_ID
+            constraintName: UK_TB_HOTEL_ARRIVAL_TIME_ID
+            tableName: TB_HOTEL

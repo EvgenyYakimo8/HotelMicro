@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: add_unique_constraint_contacts_id
+      author: "yakimov"
+      changes:
+        - addUniqueConstraint:
+            columnNames: CONTACTS_ID
+            constraintName: UK_TB_HOTEL_CONTACTS_ID
+            tableName: TB_HOTEL
