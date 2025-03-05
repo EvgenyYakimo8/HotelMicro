@@ -34,7 +34,7 @@ public class HotelService {
         return hotelRepository.searchHotels(name, brand, city, country, amenities);
     }
 
-    public Map<String, Integer> getHistogram(String param) {
+    public Map<String, Long> getHistogram(String param) {
         List<Object[]> result = switch (param.toLowerCase()) {
             case "brand" -> hotelRepository.getBrandHistogram();
             case "city" -> hotelRepository.getCityHistogram();
@@ -46,7 +46,7 @@ public class HotelService {
         return result.stream()
                 .collect(Collectors.toMap(
                         arr -> (String) arr[0], // Ключ (brand, city, country, amenity)
-                        arr -> (Integer) arr[1]   // Значение (количество отелей)
+                        arr -> (Long) arr[1]   // Значение (количество отелей)
                 ));
     }
 

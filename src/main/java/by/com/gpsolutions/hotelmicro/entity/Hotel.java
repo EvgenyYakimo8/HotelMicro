@@ -31,7 +31,7 @@ public class Hotel extends BaseId {
     private ArrivalTime arrivalTime;
 
     @ElementCollection(fetch = FetchType.LAZY)
-    @CollectionTable(name = "hotel_amenities", joinColumns = @JoinColumn(name = "id"))
+    @CollectionTable(name = "tb_hotel_amenities", joinColumns = @JoinColumn(name = "id"))
     @Column(name = "amenity")
     private List<String> amenities;
 

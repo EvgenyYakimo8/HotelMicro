@@ -1,7 +1,7 @@
 databaseChangeLog:
   - changeSet:
       id: add_unique_constraint_arrival_time_id
-      author: "Жека"
+      author: "yakimov"
       changes:
         - addUniqueConstraint:
             columnNames: ARRIVAL_TIME_ID

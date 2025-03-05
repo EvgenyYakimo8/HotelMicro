@@ -16,7 +16,7 @@ public class HistogramController {
     }
 
     @GetMapping("/{param}")
-    public Map<String, Integer> getHistogram(@PathVariable String param) {
+    public Map<String, Long> getHistogram(@PathVariable String param) {
         return hotelService.getHistogram(param);
     }
 
